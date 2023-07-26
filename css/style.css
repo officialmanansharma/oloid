@@ -1,0 +1,231 @@
+:root {
+    --heading-color: #233650;
+    --text-color: #5b667b;
+    --blue-color: #2265b0;
+    --white-color: #ffffff;
+    --cadetblue-color: #609d9f;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2.625rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+button {
+    background-color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+    border-radius: 76px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.sections {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+}
+
+.header {
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+
+.nav-bar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    padding: 20px;
+    box-shadow: 0 0 10px 1px var(--cadetblue-color);
+    background-color: var(--white-color);
+}
+
+.container-nav {
+    width: 100%;
+    max-width: 1240px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.oloid-logo {
+    height: 25px;
+    width: 150px;
+    background-image: url(images/oloid-logo.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu-list li {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.fa-chevron-down {
+    font-size: 0.8rem;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 90px;
+}
+
+.content {
+    width: 50%;
+}
+
+.content-text {
+    max-width: max-content;
+    padding: 0 200px;
+}
+
+.content-text h1 {
+    line-height: 60px;
+}
+
+.content-text p {
+    line-height: 30px;
+}
+
+.content-left {
+    clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
+    background: linear-gradient(269.74deg, #F2F5F7 0.22%, #FEFEFE 99.77%);
+    padding: 70px 0;
+}
+
+.content-right {
+}
+
+.header-gradient-txt {
+    background: linear-gradient(to right, #5B9BED 0%, #cc63bc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.get-started-btn {
+    margin-top: 20px;
+}
+
+.fa-arrow-right {
+    margin-left: 5px;
+}
+
+.clients {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients-list {
+    width: max-content;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #bcc2cd;
+    padding-left: 0;
+    padding: 10px 0px 20px 0px;
+}
+
+.clients-list li {
+    margin: 0 40px;
+}
+
+.Modernize-your-workplace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Modernize-your-workplace h1 {
+    padding: 0 362px;
+    text-align: center;
+}
+
+.Modernize-your-workplace h1 {
+    padding: 0 362px;
+    text-align: center;
+}
+
+.access-management-list {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 30px;
+}
+
+.access-management-card {
+    width: 280px;
+}
+
+.access-management-card img {
+    height: 220px;
+    width: 280px;
+    border-radius: 10px;
+}
+
+.access-management-card p {
+    line-height: 30px;
+}
+
+.access-management-card a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-top: 50px;
+}
