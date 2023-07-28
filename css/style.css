@@ -39,6 +39,11 @@ h4 {
     color: var(--heading-color);
 }
 
+h6 {
+    font-size: 1.25rem;
+    line-height: 22px;
+}
+
 p {
     font-size: 1.25rem;
     line-height: 38px;
@@ -63,6 +68,7 @@ button {
 }
 
 .wrapper {
+    width: 100%;
     max-width: 1240px;
 }
 
@@ -129,6 +135,14 @@ button {
     font-size: 0.8rem;
     margin-left: 10px;
     margin-bottom: 2px;
+}
+
+.menu {
+    display: none;
+}
+
+.menu-icon {
+    font-size: 2rem;
 }
 
 .wrapper-section {
@@ -223,6 +237,11 @@ button {
     height: 220px;
     width: 280px;
     border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+.access-management-card img:hover {
+    border: 2px solid blue;
 }
 
 .access-management-card p {
@@ -284,6 +303,23 @@ button {
     padding: 20px;
     padding-bottom: 40px;
     border-radius: 20px;
+}
+
+.modern-workplace-card:hover {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+
+.modern-workplace-card:hover h3 {
+    color: var(--white-color);
+}
+
+.modern-workplace-card:hover p {
+    color: var(--white-color);
+}
+
+.modern-workplace-card:hover a {
+    color: var(--white-color);
 }
 
 .modern-workplace-card h3 {
@@ -357,7 +393,7 @@ button {
 
 footer {
     background-color: #233650;
-    padding: 100px 0;
+    padding-top: 70px;
 }
 
 .footer-1 {
@@ -377,7 +413,7 @@ footer {
 }
 
 .footer-1-1-left img {
-    height: 36px;
+    height: 35px;
     width: 100%;
     max-width: 140px;
 }
@@ -424,6 +460,140 @@ footer {
 }
 
 .elevate-form-1-1 button {
-    padding: 12px 60px;
+    padding: 12px 48px;
     margin-left: 20px;
 }
+
+.footer-1-2 {
+    color: var(--white-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 0;
+    border-bottom: 1px solid #ffffff26;
+}
+
+.footer-1-2-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-1-2-list li {
+    margin: 20px 0;
+}
+
+.footer-1-2-list li a {
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer-2 {
+    color: var(--white-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.footer-2-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-2-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.footer-2-menu li a{
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.copyright-txt p {
+    font-size: 1rem;
+    line-height: 10px;
+    color: var(--white-color);
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.social-icons li a {
+    font-size: 1.8rem;
+    color: var(--white-color);
+}
+
+.store-img {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+
+/* ---------------------------------------------- */
+
+.video-frame-wrapper {
+    /* Add necessary styling for the section */
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .video-set {
+    /* Add necessary styling for the video set container */
+    display: flex;
+    /* Set up horizontal scrolling */
+    overflow-x: scroll;
+    /* Hide scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    position: sticky;
+  }
+  .video-set::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .video-wrapper {
+    /* Add necessary styling for each video wrapper */
+    flex-shrink: 0;
+    width: 100vw;
+    height: 100%;
+    position: relative;
+  }
+  
+  .theme-lazy-video {
+    /* Add necessary styling for the video content */
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* Set the background image with parallax effect */
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; Parallax effect */
+  }
+  
+
+  /* -----------------------------Media Queries----------------------------- */
+
+  @media screen and (max-width: 425px) {
+    .menu {
+        display: block;
+    } 
+
+    .menu-list {
+        display: none;
+    }
+
+    .contact-us-btn {
+        display: none;
+    }
+  }
