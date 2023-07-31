@@ -9,6 +9,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    padding: 0;
 }
 
 html {
@@ -17,36 +18,30 @@ html {
 
 h1 {
     font-size: 2.8125rem;
-    line-height: 58px;
     color: var(--heading-color);
 }
 
 h2 {
     font-size: 2.75rem;
-    line-height: 56px;
     color: var(--heading-color);
 }
 
 h3 {
     font-size: 1.5rem;
-    line-height: 36px;
     color: var(--heading-color);
 }
 
 h4 {
     font-size: 1.375rem;
-    line-height: 34px;
     color: var(--heading-color);
 }
 
 h6 {
     font-size: 1.25rem;
-    line-height: 22px;
 }
 
 p {
     font-size: 1.25rem;
-    line-height: 38px;
     color: var(--text-color);
 }
 
@@ -67,10 +62,7 @@ button {
     cursor: pointer;
 }
 
-.wrapper {
-    width: 100%;
-    max-width: 1240px;
-}
+/* -------------------------Header---------------------------- */
 
 .header {
     width: 100%;
@@ -82,20 +74,23 @@ button {
     width: 100%;
     position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: center;
-    z-index: 999;
-    padding: 20px;
     box-shadow: 0 0 10px 1px var(--cadetblue-color);
     background-color: var(--white-color);
 }
 
 .container-nav {
     width: 100%;
+    max-width: 1240px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .flex {
@@ -145,6 +140,14 @@ button {
     font-size: 2rem;
 }
 
+/* ---------------------------------------Main Section--------------------------------------- */
+
+.wrapper {
+    width: 100%;
+    max-width: 1240px;
+    padding: 0;
+}
+
 .wrapper-section {
     width: 100%;
     margin: 0 auto;
@@ -176,8 +179,7 @@ button {
 }
 
 .main-left-text-content {
-    max-width: max-content;
-    padding: 0 200px;
+    width: 100%;
 }
 
 .main-left {
@@ -197,16 +199,21 @@ button {
 }
 
 .clients-logo-list {
-    width: max-content;
+    width: 100%;
     list-style: none;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #bcc2cd;
     padding-left: 0;
     padding: 10px 0px 20px 0px;
     gap: 80px;
+}
+
+.clients-logo-list li img {
+    width: 100%;
+    max-width: unset;
 }
 
 .Modernize-your-workplace {
@@ -223,19 +230,20 @@ button {
 
 .access-management-list {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
     margin-top: 20px;
 }
 
 .access-management-card {
-    width: 280px;
+    width: 290px;
 }
 
 .access-management-card img {
-    height: 220px;
-    width: 280px;
+    width: 100%;
+    height: 232px;
     border-radius: 10px;
     border: 2px solid transparent;
 }
@@ -244,20 +252,29 @@ button {
     border: 2px solid blue;
 }
 
-.access-management-card p {
-    height: 150px;
-    margin: 10px 0px 100px 0px;
+.access-management-card h3 {
+    margin: 20px 0;
 }
 
-#cloud-based-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.access-management-card p {
+    height: 160px;
+    font-size: 1.125rem;
+    line-height: 30px;
 }
 
 .cloud-based-section {
     background-color: #f2f4f9;
     padding: 160px 0px 95px;
+}
+
+.cloud-based-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cloud-based {
+    width: 50%;
 }
 
 .cloud-based-left {
@@ -267,12 +284,15 @@ button {
     align-items: flex-start;
 }
 
-.cloud-based-left h1 {
+.cloud-based-left h2 {
     margin: 30px 0 30px 0;
+    padding-right: 56px;
 }
 
 .cloud-based-left p {
     margin: 0px 0 30px 0;
+    padding-right: 40px;
+    line-height: 38px;
 }
 
 .cloud-based-right-img {
@@ -283,18 +303,25 @@ button {
     background-size: contain;
 }
 
-.cloud-based {
-    width: 50%;
-}
-
 .modern-workplace-section {
     padding: 120px 0;
+}
+
+.modern-workplace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modern-workplace h2 {
+    text-align: center;
 }
 
 .modern-workplace-list {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    margin-top: 20px;
 }
 
 .modern-workplace-card {
@@ -303,6 +330,20 @@ button {
     padding: 20px;
     padding-bottom: 40px;
     border-radius: 20px;
+}
+
+.modern-workplace-card h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.modern-workplace-card p {
+    font-size: 1.125rem;
+    margin-top: 0;
+    margin-bottom: 35px;
+    line-height: 38px;
+    height: 112px;
 }
 
 .modern-workplace-card:hover {
@@ -322,31 +363,29 @@ button {
     color: var(--white-color);
 }
 
-.modern-workplace-card h3 {
-    font-size: 1.25rem;
-    margin: 0;
-}
-
-.modern-workplace-card p {
-    margin-top: 0;
-    margin-bottom: 35px;
-    line-height: 35px;
-}
-
 .experience-section {
     background-color: #f2f4f9;
-    padding: 120px 0 60px 0;
+    padding: 160px 0;
 }
+
 .experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+}
+
+.experience h2 {
+    margin: 10px;
 }
 
 .experience p {
     padding: 0 280px;
+    line-height: 38px;
 }
 
 .experience-img {
-    height: 800px;
+    height: 686px;
     width: 100%;
     background-image: url(images/Unify-your-access-control-experience.webp);
     background-size: contain;
@@ -354,7 +393,7 @@ button {
 }
 
 .identity-and-access-section {
-    padding: 120px 0 100px 0;
+    padding: 160px 0 100px 0;
     background: linear-gradient(180deg,#fff 53%,#f2f4f9 53%);
 }
 
@@ -363,32 +402,41 @@ button {
     flex-direction: column;
 }
 
+.identity-and-access h2 {
+    text-align: center;
+}
+
 .identity-and-access-list {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
     gap: 30px;
 }
 
 .identity-and-access-card {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     box-shadow: 0px 8px 28px 0px rgba(20,20,43,0.1);
-    padding: 60px 25px 70px 25px;
+    padding: 60px 35px;
     border-radius: 20px;
     background-color: var(--white-color);
 }
 
 .identity-and-access-card h3 {
     margin: 0;
-    margin: 30px 0;
-    line-height: 0;
+    margin: 30px 0 20px 0;
     font-weight: 800;
 }
 
 .identity-and-access-card p {
-    margin: 0;
-    margin: 35px 0;
-    line-height: 35px;
+    font-size: 1.125rem;
+    margin: 0 0 30px 0;
+    line-height: 38px;
 }
 
 footer {
@@ -412,6 +460,12 @@ footer {
     width: 50%;
 }
 
+.footer-1-1-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .footer-1-1-left img {
     height: 35px;
     width: 100%;
@@ -426,7 +480,6 @@ footer {
 .footer-1-1-left p {
     font-size: 1.125rem;
     color: var(--white-color);
-    line-height: 35px;
     margin: 0;
     margin-top: 15px;
 }
@@ -517,7 +570,6 @@ footer {
 
 .copyright-txt p {
     font-size: 1rem;
-    line-height: 10px;
     color: var(--white-color);
 }
 
@@ -584,7 +636,14 @@ footer {
 
   /* -----------------------------Media Queries----------------------------- */
 
-  @media screen and (max-width: 425px) {
+  /* -------------------max-width: 500px----------------- */
+
+  @media screen and (max-width: 500px) {
+
+    html {
+        font-size: 10px;
+    }
+
     .menu {
         display: block;
     } 
@@ -595,5 +654,188 @@ footer {
 
     .contact-us-btn {
         display: none;
+    }
+
+    .wrapper {
+        width: 100%;
+        max-width: 1240px;
+        padding: 0 20px;
+    }
+
+    .clients-logo-list {
+        padding: 10px 0px 20px 0px;
+        gap: 40px;
+    }
+
+    .clients-logo-list li img {
+        width: 100%;
+        max-width: 60px;
+    }
+
+    .access-management-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .access-management-card p {
+        height: 50px;
+        margin: 10px 0px;
+    }
+
+    .cloud-based-section {
+        background-color: #f2f4f9;
+        padding: 40px 0px;
+    }
+
+    .cloud-based-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cloud-based {
+        width: 100%;
+    }
+
+    .cloud-based-left {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    .cloud-based-right-img {
+        height: 424px;
+        width: 100%;
+        background-image: url(images/Devices-2.2.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .modern-workplace-section {
+        padding: 40px 0;
+    }
+
+    .modern-workplace-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .experience-section {
+        padding: 30px 0;
+    }
+    
+    .experience p {
+        padding: 0 32px;
+    }
+
+    .experience-img {
+        height: 186px;
+    }
+
+    .identity-and-access-section {
+        background: linear-gradient(180deg,#fff 53%,#f2f4f9 53%);
+    }
+
+    .identity-and-access-list {
+        flex-direction: column;
+    }
+
+    .identity-and-access {
+        text-align: center;
+    }
+
+    .identity-and-access-card {
+        width: 100%;
+        max-width: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .identity-and-access-card h3 {
+        margin: 0;
+        margin: 40px 0 20px 0;
+        font-weight: 800;
+    }
+
+    .identity-and-access-card p {
+        margin: 0;
+        margin: 5px 0;
+    }
+
+    .identity-and-access-card button {
+        margin-top: 20px;
+    }
+
+    .footer-1-1 {
+        flex-direction: column;
+        padding: 0 25px;
+        padding-bottom: 50px;
+    }
+
+    .footer-1-1-common {
+        width: 100%;
+    }
+
+    .footer-1-1-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-1-1-left h4 {
+        margin: 0;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 1.375rem;
+    }
+    
+    .footer-1-1-left p {
+        font-size: 1.125rem;
+        margin-top: 20px;
+        margin-bottom: 35px;
+    }
+
+    .footer-1-2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-1-2-common {
+        margin: 15px 0;
+    }
+
+    .footer-1-2-list li a {
+        color: var(--white-color);
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
+    .footer-2 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer-2-menu {
+        margin-bottom: 20px;
+    }
+
+    .copyright-txt p {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 50px;
+    }
+
+    .social-icons li a {
+        font-size: 2.2rem;
     }
   }
