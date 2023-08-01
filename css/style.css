@@ -506,6 +506,12 @@ footer {
     font-weight: 600;
 }
 
+.elevate-form-1-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .elevate-form-1-1 input {
     padding: 12px 24px;
     border: 1px solid #dee3eb;
@@ -778,6 +784,7 @@ footer {
     }
 
     .identity-and-access-section {
+        padding: 20px 0;
         background: linear-gradient(180deg,#fff 53%,#f2f4f9 53%);
     }
 
@@ -795,21 +802,25 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 40px 25px;
     }
 
     .identity-and-access-card h3 {
+        font-size: 1.8rem;
         margin: 0;
-        margin: 40px 0 20px 0;
+        margin: 20px 0 10px 0;
         font-weight: 800;
     }
 
     .identity-and-access-card p {
+        font-size: 1.42rem;
+        line-height: 28px;
         margin: 0;
-        margin: 5px 0;
     }
 
     .identity-and-access-card button {
         margin-top: 20px;
+        font-size: 1.6rem;
     }
 
     .footer-1-1 {
@@ -832,13 +843,46 @@ footer {
         margin: 0;
         margin-top: 30px;
         text-align: center;
-        font-size: 1.375rem;
+        font-size: 2.2rem;
+        line-height: 30px;
     }
     
     .footer-1-1-left p {
-        font-size: 1.125rem;
+        font-size: 1.5rem;
+        line-height: 30px;
         margin-top: 20px;
         margin-bottom: 35px;
+        text-align: center;
+    }
+
+    .elevate-your-workplace h3 {
+        font-size: 1.68rem;
+        font-weight: 800;
+        text-align: center;
+        line-height: 24px;
+    }
+
+    .elevate-form label {
+        font-size: 1.5rem;
+    }
+
+    .elevate-form-1-1 input {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .elevate-form-1-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .elevate-form-1-1 button {
+        font-size: 1.6rem;
+        padding: 12px 80px;
+        margin-left: 0px;
+        margin-top: 20px;
     }
 
     .footer-1-2 {
