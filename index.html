@@ -6,9 +6,12 @@
     <link rel="icon" type="image/x-icon" href="css/images/oloid-favicon.png">
     <title>OLOID® - Enabling the Cyber and Physical Identity Convergence</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-slider.css">
+    <link rel="stylesheet" href="css/parallax-scroll.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 <body>
     <header class="header">
@@ -19,10 +22,18 @@
                         <div class="oloid-logo"></div>
                     </a>
                     <ul class="menu-list">
-                        <li>Products<i class="fa-solid fa-chevron-down"></i></li>
-                        <li>Solutions<i class="fa-solid fa-chevron-down"></i></li>
-                        <li>Resourses<i class="fa-solid fa-chevron-down"></i></li>
-                        <li>Company<i class="fa-solid fa-chevron-down"></i></li>
+                        <li>Products<i class="fa-solid fa-chevron-down"></i>
+                            <div class="drop-down-list"></div>
+                        </li>
+                        <li>Solutions<i class="fa-solid fa-chevron-down"></i>
+                            <div class="drop-down-list"></div>
+                        </li>
+                        <li>Resourses<i class="fa-solid fa-chevron-down"></i>
+                            <div class="drop-down-list"></div>
+                        </li>
+                        <li>Company<i class="fa-solid fa-chevron-down"></i>
+                            <div class="drop-down-list"></div>
+                        </li>
                     </ul>
                 </div>
                 <button class="contact-us-btn">Contact Us</button>
@@ -37,15 +48,32 @@
     <div class="wrapper-section">
         <section class="section section-flex main-section">
             <div class="wrapper">
-                <div class="main-left content">
-                    <div class="main-left-text-content">
-                        <h1><span class="gradient-txt">Converging cyber and physical identity
-                        </span>for the modern workplace</h1>
-                        <p>Secure your workplace, automate business processes, and elevate employee experience.</p>
-                        <button class="get-started-btn">Get Started<i class="fa-solid fa-arrow-right"></i></button>
+                <div class="main">
+                    <div class="main-left content">
+                        <div class="main-left-text-content">
+                            <h1><span class="gradient-txt">Converging cyber and physical identity
+                            </span>for the modern workplace</h1>
+                            <p>Secure your workplace, automate business processes, and elevate employee experience.</p>
+                            <button class="get-started-btn">Get Started<i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
                     </div>
-                </div>
-                <div class="main-right content">                     
+                    <div class="main-right content">     
+                        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30"
+                        centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false" draggable="false">
+                            <swiper-slide>
+                                <img src="css/images/mobile-slider-img3-1.webp" alt="">
+                            </swiper-slide>
+                            <swiper-slide>
+                                <img src="css/images/mobile-slider-img2-1.webp" alt="">
+                            </swiper-slide>
+                            <swiper-slide>
+                                <img src="css/images/Banner-Slider-Face-auth-Resized.webp" alt="">
+                            </swiper-slide>
+                            <swiper-slide>
+                                <img src="css/images/face-camera.jpg" alt="">
+                            </swiper-slide>
+                        </swiper-container>            
+                    </div>
                 </div>
             </div>
         </section>
@@ -302,6 +330,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" 
     integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/index.js"></script>
+    <script src="js/parallax-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/swiper-slider.js"></script> -->
 </body>
 </html>
