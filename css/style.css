@@ -152,12 +152,33 @@ button {
     display: block;
 }
 
+.side-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 0;
+    background-color: #f1f6f9;
+    transition: 0.5s;
+}
+
 .menu {
     display: none;
 }
 
 .menu-icon {
     font-size: 2rem;
+}
+
+.close-icon {
+    display: flex;
+    justify-content: end;
+}
+
+.fa-xmark {
+    padding: 20px;
+    font-size: 2.5rem;
+    font-weight: 800;
 }
 
 /* ---------------------------------------Main Section--------------------------------------- */
@@ -218,9 +239,6 @@ button {
     /* content: ""; */
     /* background: linear-gradient(269.74deg,#f2f5f7 .22%,#fefefe 99.77%); */
     z-index: 2;
-}
-
-.main-right {
 }
 
 .get-started-btn {
@@ -287,6 +305,11 @@ button {
 }
 
 .access-management-card img:hover {
+    border: 2px solid blue;
+    cursor: pointer;
+}
+
+.access-management-card:hover .access-management-card img {
     border: 2px solid blue;
 }
 

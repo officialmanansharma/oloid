@@ -25,5 +25,7 @@ function loadParallaxImages() {
   }
   
   // Call the function to load images with parallax scrolling effect
-  loadParallaxImages();
   
+  document.onscroll = () => {
+    loadParallaxImages();
+  } 
