@@ -235,9 +235,9 @@ button {
 
 .main-left {
     padding: 70px 0;
-    /* clip-path: polygon(0 0,100% 0,88% 100%,0% 100%); */
-    /* content: ""; */
-    /* background: linear-gradient(269.74deg,#f2f5f7 .22%,#fefefe 99.77%); */
+    /* clip-path: polygon(0 0,100% 0,88% 100%,0% 100%);
+    content: "";
+    background: linear-gradient(269.74deg,#f2f5f7 .22%,#fefefe 99.77%); */
     z-index: 2;
 }
 
@@ -1045,8 +1045,12 @@ footer {
         margin: 10px 0;
     }
 
+    .access-management-card h3 {
+        height: 20px;
+    }
+
     .access-management-card p {
-        height: 100px;
+        height: 120px;
         font-size: 1.48rem;
     }
 
