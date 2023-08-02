@@ -1,0 +1,88 @@
+.video-frame-wrapper {
+    z-index: 1;
+    position: relative;
+    background-color: #e3e8eb;
+    max-width: 100vw;
+    min-height: 100vh;
+    height: 750vh;
+}
+
+.video-frame-wrapper .video-set {
+    position: sticky;
+    top: 100px;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-frame-wrapper .video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    pointer-events: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+canvas {
+    display: inline-block;
+    height: 100vh;
+    width: 100vw;
+}
+
+#desktop_animation .video-text.part-1 {
+    top: 100vh;
+    z-index: 5;
+}
+
+#desktop_animation .video-text.part-2 {
+    top: 200vh;
+    z-index: 5;
+}
+
+#desktop_animation .video-text.part-3 {
+    top: 300vh;
+    z-index: 5;
+}
+
+#desktop_animation .video-text.part-4 {
+    top: 460vh;
+    z-index: 5;
+}
+
+#desktop_animation .video-text.part-5 {
+    top: 625vh;
+    z-index: 5;
+}
+
+.video-text {
+    overflow: hidden;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+    right: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.anwrapper {
+    position: relative;
+}
+
+.antext h2 {
+    color: #fff;
+    font-size: 44px;
+    position: relative;
+    z-index: 1;
+}
