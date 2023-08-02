@@ -1260,6 +1260,7 @@ footer {
         align-items: center;
         text-align: center;
         padding: 20px 0;
+        gap: 0px;
     }
 
     .footer-1-2 h6 {
